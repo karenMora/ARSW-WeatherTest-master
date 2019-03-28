@@ -1,11 +1,11 @@
 var wheatherController=function(){
     alert("entro a controller")
-    function filterByCity(name) {
+    return {
+        filterByCity:function (name) {
+        alert("entro a controller "+document.getElementById('texto').value);
         wheatherRestController.getCity(name);
     }
 
-    return {
-        filterByCity: filterByCity
     };
 
 }();

@@ -5,7 +5,7 @@
  */
 var wheatherRestController=(function(){
     var url = '';
-    function getCity(name) {
+    function filterByCity(name) {
         return axios.get(url+"/weather"+name).then(function (response) {
             return response.data;
         })
@@ -13,7 +13,7 @@ var wheatherRestController=(function(){
 
     return {
         
-        getCity: getCity
+        filterByCity: filterByCity(name)
     };
 })();
 

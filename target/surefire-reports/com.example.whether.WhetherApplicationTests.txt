@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.whether.WhetherApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.148 s <<< FAILURE! - in com.example.whether.WhetherApplicationTests
-contextLoads(com.example.whether.WhetherApplicationTests)  Time elapsed: 0.003 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'weatherServicesException' defined in file [/home/2092692/Desktop/ARSW-WeatherTest-master/target/classes/com/example/whether/services/weatherServicesException.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.whether.services.weatherServicesException]: No default constructor found; nested exception is java.lang.NoSuchMethodException: com.example.whether.services.weatherServicesException.<init>()
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.whether.services.weatherServicesException]: No default constructor found; nested exception is java.lang.NoSuchMethodException: com.example.whether.services.weatherServicesException.<init>()
-Caused by: java.lang.NoSuchMethodException: com.example.whether.services.weatherServicesException.<init>()
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.561 s - in com.example.whether.WhetherApplicationTests
