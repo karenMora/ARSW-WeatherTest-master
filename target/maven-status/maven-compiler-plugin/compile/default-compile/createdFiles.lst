@@ -1,0 +1,8 @@
+com/example/whether/connection/HttpConnectionExample.class
+com/example/whether/connection/direccionKey.class
+com/example/whether/services/weatherServicesStub.class
+com/example/whether/controllers/weatherApiController.class
+com/example/whether/WhetherApplication.class
+com/example/whether/services/weatherServicesException.class
+com/example/whether/services/weatherServices.class
+com/example/whether/connection/getUrl.class

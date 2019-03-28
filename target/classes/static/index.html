@@ -3,10 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Weather layer</title>
+  
+  
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
+  
+  
+  
   <style>
     html, body{
       width: 100%;
-      height: 100%;
+      height: 80%;
       margin: 0;
       padding: 0;
     }
@@ -176,8 +191,93 @@
 </script>
 </head>
 <body>
+    
+    
+    <!-- Navigation -->
+  <!--nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="btn btn-primary" href="#">Sign In</a>
+    </div>
+  </nav-->
 
-<div id="map-canvas"></div>
+  <!-- Masthead -->
+  <!--header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">Build a landing page for your business or project and generate more leads!</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header-->
+  
+    <h1 style="text-align: center">encabezado</h1>
+    <div class="container" style="text-align: center">
+        <form name="register" method="POST" action="">
+            <input name="buscar" type="text" class="Input" value="" id="texto" size="60"/>
+            <button name="button" onclick="wheatherController.filterByCityfilterByCity($('#texto').val())">Buscar</button>
 
+        </form>
+        <h1>Datos del clima</h1>
+        <table id="ccine" style="margin: 0 auto; text-align: center">
+                    <tr style="background: darkgray; font-size:100%;text-align: center">
+                        <td><strong>cod</strong></td>
+                        <td><strong>message</strong></td>
+                        <td><strong>cnt</strong></td>
+                        <td><strong>list</strong></td>
+                        
+                        <td><strong>dt</strong></td>
+                        <td><strong>main</strong></td>
+                        <td><strong>temp</strong></td>
+                        <td><strong>temp_min</strong></td>
+                        <td><strong>temp_max</strong></td>
+                        <td><strong>pressure</strong></td>
+                        <td><strong>sea_level</strong></td>
+                        <td><strong>grnd_level</strong></td>
+                        <td><strong>humidity</strong></td>
+                        <td><strong>temp_kf</strong></td>
+                        
+                        <td><strong>weather</strong></td>
+                        <td><strong>id</strong></td>
+                        <td><strong>main</strong></td>
+                        <td><strong>description</strong></td>
+                        <td><strong>icon</strong></td>
+                        
+                        
+                        <td><strong>clouds</strong></td>
+                        <td><strong>all</strong></td>
+                        
+                        <td><strong>wind</strong></td>
+                        <td><strong>speed</strong></td>
+                        <td><strong>deg</strong></td>
+                        
+                        <td><strong>sys</strong></td>
+                        <td><strong>pod</strong></td>
+                        
+                        <td><strong>dt_txt</strong></td>
+                    </tr>
+                </table>
+        
+
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    
+    <div id="map-canvas" style="align-content: flex-end"></div>
+    
+    <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/wheatherController.js"></script>
 </body>
 </html>
